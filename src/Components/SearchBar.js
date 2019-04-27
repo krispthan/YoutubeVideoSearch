@@ -1,3 +1,4 @@
+import './Videoitem.css'
 import React from 'react';
 
 class SearchBar extends React.Component{
@@ -15,14 +16,13 @@ class SearchBar extends React.Component{
             <div className="search-bar ui segment">
                 <form onSubmit= {this.onFormSubmit}className="ui form">
                     <div className="field">
-                        <label>Video Search</label>
+                        <label className="video-search">Video Search</label>
                         <input 
                         onChange ={this.onInputChange}
                         value= {this.state.term} 
                         type="text"/>
                     </div>
                 </form>
-                SearchBar
             </div>
         );
     };
